@@ -21,4 +21,4 @@ This project was designed to move beyond simple lists and move into **Data-Drive
 
 ## ⚙️ Installation
 1. Clone the repo: `git clone https://github.com/rrebldomakr/Smart-Budget-Tracker.git`
-2. Open `index.html` in your browser.
+2. Open `https://rrebldomakr.github.io/Smart-Budget-Tracker/` in your browser.
