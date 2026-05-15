@@ -1,0 +1,84 @@
+﻿:root {
+    --bg: #050505;
+    --card: #111;
+    --accent: #00ff88; /* Green for "Safe" */
+    --warning: #ffcc00; /* Yellow for "Warning" */
+    --danger: #ff4444; /* Red for "Danger" */
+    --text: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+#app-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.glass-card, .input-panel, .stat-item {
+    background: var(--card);
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.stat-item {
+    text-align: center;
+    border-bottom: 4px solid var(--accent);
+}
+
+    .stat-item span {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 6px;
+}
+
+button {
+    background: var(--accent);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/* THE MAGIC COLOR CHANGE CLASSES */
+.warning-mode {
+    border-color: var(--warning) !important;
+    color: var(--warning) !important;
+}
+
+.danger-mode {
+    border-color: var(--danger) !important;
+    color: var(--danger) !important;
+}
+
+li {
+    background: #1a1a1a;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
